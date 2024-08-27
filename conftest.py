@@ -54,7 +54,7 @@ def example_receipt():
 
 @pytest.fixture(scope='session')
 def example_receipt_two():
-    receipt = receipts.create_receipt('M&M Corner Market', '2022-03-20', '14:33', [
+    receipt = create_receipt('M&M Corner Market', '2022-03-20', '14:33', [
         {
             "shortDescription": "Gatorade",
             "price": "2.25"

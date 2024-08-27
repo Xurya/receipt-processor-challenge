@@ -4,7 +4,7 @@ from controllers import receipts
 # Process Receipts
 
 def test_valid_process_receipt(simple_process):
-    assert id in simple_process
+    assert 'id' in simple_process
 
 def test_invalid_process_receipt():
     with pytest.raises(TypeError):
