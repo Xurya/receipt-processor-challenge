@@ -1,3 +1,27 @@
+Ryan Xu's Receipt Processor Challenge Submission
+
+## Setup / Instructions to run application
+
+Assumptions from challenge prompt below:
+1. Docker is installed
+
+### Steps:
+1. run `docker build -t <custom-tag> .` to build docker image
+2. run `docker run --rm -p 5000:5000 -it <custom-tag>` to run the image
+
+### Alternative Steps:
+1. Download python3 from https://www.python.org/downloads/ and following instructions based on OS
+2. (recommended) Create virtual environment in working directory by running `/path/to/python -m venv venv` and attach to it, more details at https://docs.python.org/3/library/venv.html
+3. run `pip install -r requirements.txt` to install dependencies.
+4. run `python app.py` to start app
+
+Notes (in the interest of time): 
+- Used defaults when possible and avoided configurations (ie. env files)
+- Did not set up production (ie. nginx/gunicorn)
+- Does not have exhaustive docstrings, logging, edge cases, integration testing, nor e2e testing.
+
+<details>
+<summary>Challenge Prompt</summary>
 # Receipt Processor
 
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided 
@@ -172,3 +196,4 @@ the reviewing engineer.
 ### How long do I have to complete the exercise?
 There is no time limit for the exercise. Out of respect for your time, we designed this exercise with the intent that it should take you a few hours. But, please
 take as much time as you need to complete the work.
+</details>
